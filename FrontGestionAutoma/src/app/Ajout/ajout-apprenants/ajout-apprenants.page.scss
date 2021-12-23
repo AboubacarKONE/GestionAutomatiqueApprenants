@@ -1,0 +1,20 @@
+ion-content {
+	// --ion-background-color: -webkit-linear-gradient( top, #fcd75f, #dfd0b9)  0 0/100% 100% no-repeat;
+    transform: translateY(5%);
+    --background:url("https://www.seekpng.com/png/detail/18-186707_color-splash-source-orange-paint-splash-png.png") 0 0/100% 100% no-repeat;
+ 
+}
+ion-app{
+   background-color: orange;
+}
+ion-card-content{
+ 
+    padding-top: 20px;
+}
+ion-card{
+    margin-top: 150px;
+    margin-bottom: 100px;
+}
+// ion-item{
+//     margin: 10%;
+// }

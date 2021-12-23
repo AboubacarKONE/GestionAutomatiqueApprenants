@@ -1,0 +1,26 @@
+
+
+<ion-header>
+  <ion-toolbar>
+    <ion-back-button slot="start"></ion-back-button>
+    <ion-title>Acceuil</ion-title>
+  </ion-toolbar>
+</ion-header>
+<ion-app>
+<ion-content [fullscreen]="true">
+<div id="container">
+    <img class="rounded-circle" src="../assets/png.png" alt="" width="900px" height="300px"> 
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/ajout-apprenants" type="submit" color="tertiary" expand="block">Ajouter</ion-button>
+      </ion-col>
+    </ion-row>
+    <ion-row>
+      <ion-col>
+        <ion-button routerLink="/liste-globale" type="submit" color="warning" expand="block">Lister</ion-button>
+      </ion-col>
+    </ion-row>
+  </div>
+
+</ion-content>
+</ion-app>

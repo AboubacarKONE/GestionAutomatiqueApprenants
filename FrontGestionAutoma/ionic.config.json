@@ -1,0 +1,7 @@
+{
+  "name": "GestionAuto",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}

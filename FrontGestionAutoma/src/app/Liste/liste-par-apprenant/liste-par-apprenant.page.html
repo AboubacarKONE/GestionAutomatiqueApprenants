@@ -1,0 +1,39 @@
+
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>
+      Liste par groupe
+    </ion-title>
+  </ion-toolbar>
+  
+</ion-header>
+  
+  <ion-content>
+  <ion-card>
+    <ion-card-header>
+     
+     
+    </ion-card-header>
+    <div class="bg-medium card" *ngIf="getGroup">
+        <div id="bloc" *ngFor="let group of getGroup; let i=index">
+          <ion-card color="warning">
+            <ion-card-header >
+           Groupe {{i+1}}
+            </ion-card-header>
+            <ion-item *ngFor="let groupItem of group" >
+                {{groupItem.nom}}  {{groupItem.prenom}}
+            </ion-item>
+          </ion-card>
+        </div>
+       
+          
+    </div>
+        
+   
+
+ 
+  </ion-card>
+  </ion-content>

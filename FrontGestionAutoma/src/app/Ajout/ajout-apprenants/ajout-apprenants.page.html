@@ -1,0 +1,55 @@
+  
+<ion-header [translucent]="false">
+    <ion-toolbar color="white">
+        <ion-buttons slot="start">
+            <ion-back-button></ion-back-button>
+          </ion-buttons>
+      <ion-title>
+        Les Groupes
+      </ion-title>
+    </ion-toolbar>
+  </ion-header>
+  <ion-app>
+<ion-card>
+
+<ion-card-content>
+ 
+  <form [formGroup]="AddForm" (ngSubmit)="OnSubmit()" novalidate>
+    <ion-list>
+    <ion-item lines="full">
+      <ion-label position="floating">Prenom</ion-label>
+      <ion-input formControlName="prenom" type="text"></ion-input>
+    </ion-item>
+   
+    <ion-item lines="full">
+      <ion-label position="floating">Nom</ion-label>
+      <ion-input formControlName="nom" type="text"></ion-input>
+    </ion-item>
+   
+    <ion-item lines="full">
+      <ion-label position="floating">Email</ion-label>
+      <ion-input formControlName="email" type="email" ></ion-input>
+    </ion-item>
+
+
+    <ion-item lines="full">
+      <ion-label position="floating">telephone</ion-label>
+      <ion-input maxlength="10" formControlName="telephone" type="text" required></ion-input>
+    </ion-item>
+    <!-- <span class="error ion-padding" *ngIf="isSubmitted && errorControl.telephone.errors?.required"style="color: red;">
+      telephone number is required.
+    </span>
+    <span class="error ion-padding" *ngIf="isSubmitted && errorControl.telephone.errors?.pattern"style="color: red;">
+  seul les nombres sont autorisés
+    </span> -->
+
+    <ion-row>
+      <ion-col>
+        <ion-button type="submit" color="danger" expand="block">Ajouter</ion-button>
+      </ion-col>
+    </ion-row>
+  </ion-list>
+  </form>
+</ion-card-content>
+</ion-card>
+</ion-app>

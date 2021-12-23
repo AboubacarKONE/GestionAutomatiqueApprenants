@@ -1,0 +1,36 @@
+i
+<ion-header [translucent]="true">
+  <ion-toolbar color="dark">
+      <ion-buttons slot="start">
+          <ion-back-button></ion-back-button>
+        </ion-buttons>
+    <ion-title>
+      Liste Globale
+    </ion-title>
+  </ion-toolbar>
+  <ion-item>
+  <ion-button (click)="showPrompt()" >Tri Par Groupe</ion-button>
+  <ion-button color="success"  (click)="exportToExcel()">Export to Excel</ion-button>
+</ion-item>
+</ion-header>
+
+<ion-content>
+  
+  <ion-virtual-scroll [items]="locals" approxItemHeight="70px">
+    <ion-item-divider *virtualHeader="let header">
+      {{ header }}
+    </ion-item-divider>
+    <ion-item *virtualItem="let apprenant ; let itemBounds = bounds;">
+      <!-- <div>
+        <ion-img [src]="apprenant.imgSrc" [height]="item.imgHeight" [alt]="item.name"></ion-img>
+      </div> -->
+    <ion-label>
+      <h2 >{{ apprenant?.nom }} {{ apprenant?.prenom }}<button (click)="deleteApprenant(apprenant.id)"  type="button" class="btn btn-danger float-end">
+        <ion-icon name="trash"></ion-icon>
+      </button> </h2>
+       
+    </ion-label>
+    </ion-item>
+  </ion-virtual-scroll>
+  
+</ion-content>

@@ -1,0 +1,38 @@
+#container {
+  text-align: center;
+  color: aqua;
+
+  position: absolute;
+height: 300px;
+  
+  top: 50%;
+  transform: translateY(-50%);
+
+  // background: -webkit-linear-gradient( top, #fae59e, #e08c0f);
+}
+
+#container strong {
+  font-size: 20px;
+  line-height: 26px;
+}
+
+#container p {
+  font-size: 16px;
+  line-height: 22px;
+
+  color: #8c8c8c;
+
+  margin: 0;
+}
+
+#container a {
+  text-decoration: none;
+
+}
+ion-app{
+  background-color: rgb(218, 187, 49);
+}
+ion-app {
+	--ion-background-color: -webkit-linear-gradient( top, #fcd75f, #e08c0f);
+ 
+}
